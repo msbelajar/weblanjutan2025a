@@ -13,7 +13,8 @@ export default function App() {
       <h3 style={{ backgroundColor: "red" }} >Web Lanjutan 2025</h3>
       <List />
       <TextArea />
-      <Button />
+      {/* <Button /> */}
+      <button className="bg-amber-400 text-white cursor-pointer">Click</button>
     </>
   );
 }

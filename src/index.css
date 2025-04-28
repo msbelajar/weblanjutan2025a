@@ -1,6 +1,6 @@
-h1 {
-  color: blue;
-}
+@import "tailwindcss";
+
+
 
 .c1 {
   background-color: aqua;
