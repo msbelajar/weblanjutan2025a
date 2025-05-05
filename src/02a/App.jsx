@@ -5,7 +5,7 @@ const App = () => {
   return (
     <div>
       <div className="flex items-center justify-center h-[150px] bg-gradient-to-br from-blue-600 to-blue-300 mb-4">
-        <h1 className="text-5xl">Selamat Datang di A-Shop</h1>
+        <h1 className="text-2xl sm:text-5xl">Selamat Datang di A-Shop</h1>
       </div>
       <div className="flex flex-wrap justify-center gap-4">
         {products.map((product) => (
