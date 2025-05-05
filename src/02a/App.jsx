@@ -5,7 +5,7 @@ const App = () => {
   return (
     <div className="flex flex-wrap justify-between gap-2">
         {products.map( (product) => (
-            <CardProduct {...product} />
+            <CardProduct key={product.id} {...product} />
         ))}
     </div>
   )
