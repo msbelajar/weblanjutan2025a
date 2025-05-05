@@ -1,4 +1,4 @@
-const Cardv2 = ({nama, usia, nim, prodi}) => {
+const Cardv2 = ({nama, usia = 28, nim, prodi}) => {
   return (
     <div className="w-[300px] bg-amber-200 rounded-md p-3 m-2">
         <p>Nama : {nama}</p>
