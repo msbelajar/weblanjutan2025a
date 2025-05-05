@@ -1,7 +1,13 @@
+import { products } from "./products"
+import CardProduct from "./CardProduct"
 
 const App = () => {
   return (
-    <div>App</div>
+    <div className="flex flex-wrap justify-between gap-2">
+        {products.map( (product) => (
+            <CardProduct {...product} />
+        ))}
+    </div>
   )
 }
 
