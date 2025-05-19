@@ -1,5 +1,6 @@
 import { products } from "./products";
 import CardProduct from "./CardProduct";
+// import bgImage from "./LCCB6.jpg"
 
 const App = () => {
   return (
