@@ -11,8 +11,9 @@ export default function Contoh04() {
   return (
     <div className="w-[90%] mx-auto mt-4">      
       <h1 className="text-8xl font-bold">{counter}</h1>
-      <Button onclick={handleClick} />
-      <Button onclick={handleClick} />
+      <h2 className="bg-red"></h2>
+      <Button color="blue" onclick={handleClick} />
+      <Button color="red" onclick={handleClick} />
     </div>
   );
 }
