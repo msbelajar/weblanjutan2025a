@@ -1,14 +1,19 @@
+import { useEffect, useState } from "react";
 import CardProduct from "./CardProduct";
 
 const App = () => {
 
   const [products, setProducts] = useState([])
 
-  function getProducts() {
+  async function getProducts() {
     fetch('https://fakestoreapi.com/products')
     .then(response => response.json())
-    .then(data => console.log(data));
+    .then(data => setProducts(data));
   }
+
+  useEffect(() => {
+    getProducts()
+  },[])
 
   const categories = ["men's clothing", "women's clothing", "electronics", "jewelery"]
   return (
@@ -17,6 +22,7 @@ const App = () => {
         <h1 className="text-2xl sm:text-5xl">Selamat Datang di A-Shop</h1>
       </div>
       <div className="flex justify-center gap-2 mb-4">
+        <input placeholder="Cari Product" className="border-1 rounded-md p-2 w-[400px]"/>
         {categories.map((category) => (
           <button className="bg-gray-600 px-2 py-2 rounded-xl text-white">{category}</button>
         ))}

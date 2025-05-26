@@ -2,6 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './04b/App.jsx'
+import ContohAsync from './04b/ContohAsync.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
