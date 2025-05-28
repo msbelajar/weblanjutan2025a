@@ -17,7 +17,7 @@ export default function ProductsbyID() {
   
     return (
         <div>
-            
+            {product.title}
         </div>
   )
 }
