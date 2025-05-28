@@ -14,6 +14,7 @@ const App = () => {
     const res = await fetch("https://fakestoreapi.com/products");
     const data = await res.json();
     setProducts(data);
+    //----------------------
     setProcat(null)
     setLoading(false);
   }
@@ -49,7 +50,7 @@ const App = () => {
         {loading ? (
           <img src={gifloading} />
         ) : (
-          products.filter((product) => !procat || product.category === procat)
+          products.filter((product) => !procat || product.category == procat)
           .map((product) => (
             <CardProduct key={product.id} {...product} />
           ))
