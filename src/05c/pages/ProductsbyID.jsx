@@ -1,5 +1,8 @@
+import { useParams } from "react-router"
+
 export default function ProductsbyID() {
+    const {id} = useParams()
   return (
-    <div>ProductsbyID</div>
+    <div>ProductsbyID {id}</div>
   )
 }

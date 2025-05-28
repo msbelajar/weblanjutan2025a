@@ -8,7 +8,7 @@ const CardProduct = ({ id, title, price, image }) => {
       <h1 className="font-bold text-xl">{title}</h1>
       <div className="flex justify-between items-center mt-2">
         <h1 className="text-2xl font-bold">$ {price}</h1>
-        <a href={"/product/"+id} target="_blank">
+        <a href={"/product/"+id}>
           <button className="bg-blue-400 text-white px-4 py-2 rounded-md">
             Detail
           </button>

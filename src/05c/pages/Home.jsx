@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import CardProduct from "./components/CardProduct";
+import CardProduct from "../components/CardProduct";
 import gifloading from "../assets/gifloading.gif";
 
 const App = () => {
